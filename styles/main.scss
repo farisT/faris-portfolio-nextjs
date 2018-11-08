@@ -1,0 +1,11 @@
+@import './variables.scss';
+@import './mixins.scss';
+@import './components.scss';
+
+body {
+    font-family: Poppins;
+}
+
+.home-grid {
+    display: grid;
+}

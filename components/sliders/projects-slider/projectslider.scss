@@ -1,0 +1,29 @@
+
+.section {
+    text-align: center;
+}
+
+.face-img {
+    width:50%;
+}
+
+
+.project {
+
+    &--one{
+        background: $pink;
+    }
+    &--two{
+        background: $green;
+    }
+    &--three{
+        background: $light-blue;
+    }
+        
+
+    &__number{
+        color: white;
+        font-weight: 800;
+        font-size: 500px;
+    }
+}

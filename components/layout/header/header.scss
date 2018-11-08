@@ -1,0 +1,47 @@
+.header {
+    width: 95%;
+    position: relative;
+    z-index: 100;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-height: 10px;
+    &--fixed {
+        z-index: 50;
+        margin-left: 0%;
+        position: fixed;
+        width: 100%;
+        display: grid;
+        max-height: 80px;
+        background: white;
+    }
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: auto 25% 25%;
+    }
+    &__item {
+        display: inline-block;
+    }
+    &__link {
+        
+        text-decoration: none;
+        color: $blue;
+        font-weight: 800;
+        font-size: 20px;
+        @include header-text;
+        @include border-pink;
+        &:visited{
+            text-decoration: none;
+            color: $blue;
+        }
+        &--projects{
+            @include header-text;
+            @include border-green;
+        }
+        &--about{
+            @include header-text;
+            @include border-lightblue;
+        }
+        
+    }
+}
