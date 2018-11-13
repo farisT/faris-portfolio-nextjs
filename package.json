@@ -1,6 +1,6 @@
 {
   "name": "faris-portfolio-nextjs",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Faris portfolio website with Next.js",
   "main": "index.js",
   "scripts": {
@@ -17,16 +17,16 @@
     "next-compose-plugins": "^2.1.1",
     "next-optimized-images": "^1.4.1",
     "node-sass": "^4.9.3",
-    "normalize.css": "^8.0.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "normalize.css": "^8.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "react-pose": "^4.0.1",
     "react-sticky": "^6.0.3",
     "react-visibility-sensor": "^5.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
-    "eslint": "^5.8.0",
+    "eslint": "^5.9.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",

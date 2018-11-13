@@ -20,12 +20,15 @@ const ProjectSlider = props => (
             }
               <div className='section project--one'>
                   <span className='project__number'>1</span>
+                  <div className='project__title'>Bedrijvenportal</div>
               </div>
               <div className='section project--two'>
                   <span className='project__number'>2</span>
+                  <div className='project__title'>Swop</div>
               </div>
               <div className='section project--three'>
                   <span className='project__number'>3</span>
+                  <div className='project__title'>ReactStack</div>
               </div>
             
           </ReactFullpage.Wrapper>

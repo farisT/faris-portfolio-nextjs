@@ -1,6 +1,7 @@
 @import './variables.scss';
 @import './mixins.scss';
 @import './components.scss';
+@import '../components/layout/layout.scss';
 
 body {
     font-family: Poppins;
@@ -14,4 +15,9 @@ body {
 .container {
     display: grid;
     grid-template-columns: 75px auto;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
