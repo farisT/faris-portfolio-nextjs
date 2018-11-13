@@ -1,0 +1,30 @@
+
+.face-img {
+    width:57%;
+}
+
+.face-outline {
+    position: absolute;
+    left: 10%;
+}
+
+.standard-image {
+    width: 95%;
+}
+
+.about-image-normal {
+    width: 95%;
+    content: url('../assets/about/groenfull.jpg');
+    @include for-phone {
+        display: none;
+    }
+}
+
+.about-image-small {
+    display: none;
+    @include for-phone {
+        display: unset;
+        width: 95%;
+        content: url('../assets/about/groen.jpg');
+    }
+}

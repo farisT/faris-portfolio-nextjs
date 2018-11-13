@@ -1,11 +1,11 @@
 
 .section {
     text-align: center;
+    &--home {
+        text-align: unset;
+    }
 }
 
-.face-img {
-    width:50%;
-}
 
 
 .project {

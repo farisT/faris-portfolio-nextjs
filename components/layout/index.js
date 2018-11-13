@@ -1,13 +1,11 @@
-import React, { Fragment } from 'react';
-import Meta from '../Meta'
-import Header from './header'
+import Main from './main';
+import ProjectLayout from './project-layout'
+import SocialMedia from './socialmedia'
+import Container from './container'
 
-export default (props) =>  (
-    <Fragment>
-        <Meta />
-        <div className="root">
-            <Header />
-            {props.children}
-        </div>
-    </Fragment>
-)
+export {
+    Main,
+    ProjectLayout,
+    SocialMedia,
+    Container
+}

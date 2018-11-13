@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint pages/*.js components/*.js"
   },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.2",
@@ -19,9 +20,16 @@
     "normalize.css": "^8.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-pose": "^4.0.1"
+    "react-pose": "^4.0.1",
+    "react-sticky": "^6.0.3",
+    "react-visibility-sensor": "^5.0.2"
   },
   "devDependencies": {
-    "autoprefixer": "^9.1.5"
+    "autoprefixer": "^9.1.5",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
   }
 }

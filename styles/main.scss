@@ -8,4 +8,10 @@ body {
 
 .home-grid {
     display: grid;
+    grid-template-columns: 150px auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 75px auto;
 }

@@ -1,5 +1,7 @@
-import HomeImage from './home-image'
+import HomeImage from './home-image';
+import StandardImage from './standard-image';
 
 export {
-    HomeImage
+    HomeImage,
+    StandardImage
 }

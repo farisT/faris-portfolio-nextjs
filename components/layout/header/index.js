@@ -1,11 +1,11 @@
 import React from 'react';
-import { headerSelector } from '../../../lib'
+import { headerSelector, headerClass } from '../../../lib'
 import { withRouter } from 'next/router'
 import Link from 'next/link'
 
 const Header = (props) => {
     return(
-    <header className='header--fixed' >
+    <header className={headerClass(props.router.pathname)} >
         <ul className='header__list' >
             <li>
                 <Link href='/'>

@@ -1,0 +1,29 @@
+.icon--github {
+    width: 58%;
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    &:hover {
+        content: url("../assets/icons/github-alt-brands-pink.svg");
+        background-repeat: no-repeat;
+    }
+    &:active {
+        content: url("../assets/icons/github-clicked.svg");
+        background-repeat: no-repeat;
+    }
+}
+
+.icon--linkedin {
+    width: 58%;
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    &:hover {
+        content: url("../assets/icons/linkedin-in-brands-pink.svg");
+        background-repeat: no-repeat;
+    }
+    &:active {
+        content: url("../assets/icons/linkedin-clicked.svg");
+        background-repeat: no-repeat;
+    }
+}

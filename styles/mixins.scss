@@ -47,3 +47,19 @@
     font-weight: 800;
     font-size: 20px;
 }
+
+@mixin for-phone {
+    @media (min-width: 280px) and (max-width: 640px)  { @content; }
+}
+
+@mixin for-tablet {
+    @media (min-width: 641px) and (max-width: 1023px) { @content; }
+}
+
+@mixin for-both {
+  @media (min-width: 1023px) { @content; }
+}
+
+@mixin for-phablet {
+  @media (max-width: 1023px) { @content; }
+}

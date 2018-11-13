@@ -1,13 +1,18 @@
 import React, { Component } from 'react'
-import Layout from '../components/layout/index';
+import { Main, SocialMedia, Container } from '../components/layout';
+import { StandardImage } from '../components/image';
 
 export default class extends Component {
   render() {
+    console.log(global.innerWidth)
     return (
-      <Layout>
-
-      </Layout>
-
+      <Main>
+        <Container>
+          <SocialMedia />
+          <StandardImage className='about-image-normal' />
+          <StandardImage className='about-image-small'/>
+        </Container>
+      </Main>
     )
   }
 }

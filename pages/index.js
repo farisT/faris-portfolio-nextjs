@@ -1,19 +1,18 @@
 import React, { Component } from 'react'
-import Layout from '../components/layout/index';
-import SocialMedia from '../components/layout/socialmedia/socialmedia'
+import { Main, SocialMedia } from '../components/layout'
 import { ProjectSlider } from '../components/sliders'
 import { HomeImage } from '../components/image'
 export default class extends Component {
   render() {
     return (
-      <Layout>
-          <ProjectSlider>
+      <Main>
+          <ProjectSlider children>
             <div className="home-grid">
               <SocialMedia />
               <HomeImage />
             </div>
           </ProjectSlider>
-      </Layout>
+      </Main>
 
     )
   }

@@ -1,5 +1,5 @@
 .header {
-    width: 95%;
+    width: 100%;
     position: relative;
     z-index: 100;
     margin-top: 2rem;
@@ -18,7 +18,11 @@
         list-style: none;
         display: grid;
         grid-template-columns: auto 25% 25%;
+        @include for-phone{
+            padding: 0;
+        }
     }
+
     &__item {
         display: inline-block;
     }
@@ -37,10 +41,12 @@
         &--projects{
             @include header-text;
             @include border-green;
+            margin-left: 2rem;
         }
         &--about{
             @include header-text;
             @include border-lightblue;
+            margin-left: 2rem;
         }
         
     }

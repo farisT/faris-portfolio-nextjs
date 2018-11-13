@@ -1,0 +1,13 @@
+.social-media {
+    margin: 0 auto;
+    padding-top: 250px;
+        &__container {
+            background: $blue;
+            border-radius: 50%;
+            width: 50px;
+            overflow: hidden;
+            height: 50px;
+            margin-top: 20px;
+            display: block;
+        }
+}

@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-import { Main } from '../components/layout';
-import { ProjectSlider } from '../components/sliders'
+import { Main, SocialMedia, Container } from '../components/layout';
 
 export default class extends Component {
   render() {
     return (
       <Main>
-        <ProjectSlider />
+          <Container>
+              
+          </Container>
       </Main>
     )
   }
