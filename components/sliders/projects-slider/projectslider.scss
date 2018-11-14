@@ -19,12 +19,14 @@
     &--three{
         background: $light-blue;
     }
-        
 
     &__number{
         color: white;
         font-weight: 800;
         font-size: 550px;
+        @include for-phone {
+            font-size: 350px;
+        }
     }
 
     &__title {
@@ -34,6 +36,65 @@
         left: 50%;
         transform: translate(-50%,-50%);
         position: absolute;
-        color: $blue
+        color: $blue;
+        @include for-phone {
+            font-size: 30px
+        }
+    }
+    &__info {
+        position: absolute;
+        bottom: 10%;
+        left:3%;
+        width:212px;
+        text-align: justify;
+        @include for-phone {
+            bottom: 7%;
+            display: none;
+        }
+    }
+    &__info-details {
+        font-weight: 300;
+    }
+    &__triangle-top {
+        position: absolute;
+        left: 3%;
+        top:10%;
+        width: 40%;
+        @include for-phone {
+        position: absolute;
+        left: 3%;
+        top:10%;
+        width: 253.9px;
+        }
+    }
+    &__triangle-bottom {
+        position: absolute;
+        right: 3%;
+        bottom:10%;
+        width: 40%;
+        @include for-phone {
+        position: absolute;
+        right: 3%;
+        bottom:2%;
+        width: 225.9px
+        }
+    }
+    &__link {
+        @include border-lightblue;
+        @include link-text;
+        line-height: 1.0em;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        &--blue {
+            @include border-lightblue;
+            @include link-text;
+            line-height: 1.0em;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
     }
 }

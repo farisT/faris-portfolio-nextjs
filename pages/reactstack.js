@@ -5,11 +5,26 @@ import ReactStackMain from '../assets/projectthree/reactstack-main.jpg'
 import { data } from '../data/descriptions.js';
 
 export default class extends Component {
+  state = {
+    windowSize: global.innerWidth
+  }
+  componentDidMount(){
+    window.addEventListener('resize', this.handleResize)
+  }
+  componentWillUnmount(){
+    window.removeEventListener('resize', this.handleResize)
+  }
+  handleResize = () => {
+    this.setState({
+      windowSize: window.innerWidth
+    })
+  }
   render() {
+    const { windowSize } = this.state;
     return (
       <Main>
           <Container>
-            <SocialMedia />
+            {windowSize >= 650 && <SocialMedia />}
             <HeadImage image={ReactStackMain} />
           </Container>
           <div className='project-grid'>

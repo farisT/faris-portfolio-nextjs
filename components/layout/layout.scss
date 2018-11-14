@@ -1,5 +1,9 @@
 .description-container {
     width: 75%;
+    @include for-phone {
+        width: 90%;
+        margin: 15px;
+    }
 }
 .description {
     text-align: justify;
@@ -8,4 +12,7 @@
 .description-title {
     font-weight: 800;
     font-size: 45px;
+    @include for-phone {
+        font-size: 26px;
+    }
 }

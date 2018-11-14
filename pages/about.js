@@ -4,7 +4,6 @@ import { StandardImage } from '../components/image';
 
 export default class extends Component {
   render() {
-    console.log(global.innerWidth)
     return (
       <Main>
         <Container>

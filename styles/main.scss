@@ -15,9 +15,16 @@ body {
 .container {
     display: grid;
     grid-template-columns: 75px auto;
+    @include for-phone {
+        grid-template-columns: auto;
+    }
 }
 
 .project-grid {
     display: grid;
     grid-template-columns: 50% 50%;
+    @include for-phone {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    }
 }

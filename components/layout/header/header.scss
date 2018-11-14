@@ -20,6 +20,7 @@
         grid-template-columns: auto 25% 25%;
         @include for-phone{
             padding: 0;
+            grid-template-columns: auto auto auto;
         }
     }
 
@@ -42,22 +43,32 @@
         &--bedrijvenportal{
             @include header-text;
             @include border-pink;
-            margin-left: 2rem;
+            margin-left: 0rem;
         }
         &--swop{
             @include header-text;
             @include border-green;
+            @include for-phone {
+                margin-left: 0rem;
+            }
             margin-left: 2rem;
         }
         &--reactstack{
             @include header-text;
             @include border-lightblue;
+            @include for-phone {
+                margin-left: 0rem;
+            }
             margin-left: 2rem;
+
         }
         &--projects{
             @include header-text;
             @include border-green;
             margin-left: 2rem;
+            @include for-phone {
+                margin-left: 1rem;
+            }
         }
         &--about{
             @include header-text;

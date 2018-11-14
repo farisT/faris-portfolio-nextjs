@@ -48,6 +48,13 @@
     font-size: 20px;
 }
 
+@mixin link-text {
+    text-decoration: none;
+    color: $blue;
+    font-weight: 600;
+    font-size: 20px;
+}
+
 @mixin for-phone {
     @media (min-width: 280px) and (max-width: 640px)  { @content; }
 }
