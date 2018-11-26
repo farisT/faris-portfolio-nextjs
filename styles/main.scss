@@ -10,6 +10,9 @@ body {
 .home-grid {
     display: grid;
     grid-template-columns: 150px auto;
+    @include for-phone {
+    grid-template-columns: auto;
+    }
 }
 
 .container {
@@ -17,6 +20,7 @@ body {
     grid-template-columns: 75px auto;
     @include for-phone {
         grid-template-columns: auto;
+        overflow: hidden;
     }
 }
 

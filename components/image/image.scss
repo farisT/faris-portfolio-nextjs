@@ -1,6 +1,9 @@
 
 .face-img {
     width:57%;
+    @include for-phone {
+        width: 100%;
+    }
 }
 
 .face-outline {
@@ -29,7 +32,8 @@
     display: none;
     @include for-phone {
         display: unset;
-        width: 95%;
+        margin-left: -18%;
+        width: 200%;
         content: url('../assets/about/groen.jpg');
     }
 }
