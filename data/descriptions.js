@@ -10,6 +10,10 @@ export const data  = {
         "reactstack": {
             "title":"ReactStack.",
             "description": "ReactStack is a React boilerplate for people looking to incorporate more functionality to the already great Create-React-App package. This includes a pathway to building and scaling full-stack apps using MongoDB and Express."
+        },
+        "about": {
+          "title":"About Faris." ,
+          "description": "As a Full-stack Developer I have worked mainly with React.js, Redux, Node.js and JavaScript (ES6). I have experience in the field of hosting, databases, authentication, building components and making websites / platforms SEO 'ready'. Here I take into account all the wishes of the customer, I ensure the delivery of a maintenance and scalable application with consistent code. As a developer I find it important to always develop myself further in the field of new techniques, tools but also fine-tuning or keeping current knowledge up-to-date. I do this, among other things, by developing various apps to make everyday life a lot easier." 
         }
         
 }

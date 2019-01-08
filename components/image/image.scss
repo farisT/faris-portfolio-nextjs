@@ -9,6 +9,10 @@
 .face-outline {
     position: absolute;
     left: 10%;
+    @include for-phone {
+        left: 0%;
+        width:  90%;
+    }
 }
 
 .standard-image {

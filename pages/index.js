@@ -13,7 +13,6 @@ export default class extends Component {
             </div>
           </ProjectSlider>
       </Main>
-
     )
   }
 }

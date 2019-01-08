@@ -13,7 +13,6 @@ export default class extends Component {
             <HeadImage image={BedrijvenPortalMain} />
           </Container>
           <div className='project-grid'>
-            <div/>
             <Description title={data.bedrijvenportal.title} >
               {data.bedrijvenportal.description}
             </Description>
