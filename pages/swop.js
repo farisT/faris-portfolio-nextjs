@@ -6,26 +6,11 @@ import TriangleOne from '../assets/projecttwo/greentriangleone.svg';
 import { data } from '../data/descriptions.js';
 
 export default class extends Component {
-  state = {
-    windowSize: global.innerWidth
-  }
-  componentDidMount(){
-    window.addEventListener('resize', this.handleResize)
-  }
-  componentWillUnmount(){
-    window.removeEventListener('resize', this.handleResize)
-  }
-  handleResize = () => {
-    this.setState({
-      windowSize: window.innerWidth
-    })
-  }
   render() {
-    const { windowSize } = this.state;
     return (
       <Main>
           <Container>
-            {windowSize >= 650 && <SocialMedia />}
+            <SocialMedia/>
             <HeadImage image={SwopMain} />
           </Container>
           <div className='project-grid'>
