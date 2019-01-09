@@ -41,3 +41,23 @@
         content: url('../assets/about/groen.jpg');
     }
 }
+
+
+.triangle-about-pink {
+    position: absolute;
+    bottom: -2%;
+    right: 10%;
+    @include for-phone {
+        right: 10%;
+        width: 50%;
+    }
+}
+
+.triangle-about-blue {
+    left: 0%;
+    @include for-phone {
+        width: 50%
+    }
+}
+
+
