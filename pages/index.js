@@ -7,7 +7,6 @@ export default class extends Component {
   render() {
     return (
       <Main>
-        <Timeline />
           <ProjectSlider children>
             <div className="home-grid">
               <SocialMedia />

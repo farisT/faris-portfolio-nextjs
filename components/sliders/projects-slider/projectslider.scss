@@ -55,8 +55,8 @@
     }
     &__info {
         position: absolute;
-        bottom: 10%;
-        left:3%;
+        bottom: 8%;
+        left:8%;
         width:212px;
         text-align: justify;
         @include for-phone {
@@ -131,17 +131,21 @@
 }
 
 .project-number {
-    display: none;
-    @include for-both {
-        z-index: 500000;
-        background: white;
-        display: unset; 
-        color: $blue;
-        position: absolute;
-        right: 1%;
-        top: 20%;
+    &__1 {
+        display: none;
+        @include for-both {
+            z-index: 500000;
+            background: white;
+            display: unset; 
+            color: $blue;
+            position: absolute;
+            right: 1%;
+            top: 20%;
+        }
     }
-    &__two {
+    &__2 {
+        display: none;
+        @include for-both {
         z-index: 500000;
         background: white;
         display: unset; 
@@ -149,8 +153,11 @@
         position: absolute;
         right: 1%;
         top: 40%;
+        }
     }
-    &__three {
+    &__3 {
+        display: none;
+        @include for-both {
         z-index: 500000;
         background: white;
         display: unset; 
@@ -158,6 +165,7 @@
         position: absolute;
         right: 1%;
         top: 70%;
+        }
     }
 }
 

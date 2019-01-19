@@ -7,13 +7,9 @@ export default class extends Component {
   state = {
 
   }
-  getBodyClass = () => {
-
-  }
   render() {
     return (
       <Main>
-        <Timeline/>
         <ProjectSlider />
       </Main>
     )
