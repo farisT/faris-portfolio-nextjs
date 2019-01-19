@@ -12,12 +12,24 @@
 
     &--one{
         background: $pink;
+        @include for-both {
+            width: 90%;
+            margin: 0 auto;
+        }
     }
     &--two{
         background: $green;
+        @include for-both {
+            width: 90%;
+            margin: 0 auto;
+        }
     }
     &--three{
         background: $light-blue;
+        @include for-both {
+            width: 90%;
+            margin: 0 auto;
+        }
     }
 
     &__number{
@@ -98,3 +110,60 @@
         }
     }
 }
+
+.timeline-container {
+    display: none;
+    @include for-both {
+        z-index: 500000;
+        display: unset;
+        position: absolute;
+        right: 2%;
+        top: 12%;
+    }
+}
+
+.line {
+    display: none;
+    @include for-both{
+        display: unset; 
+        width: 85%
+    }
+}
+
+.project-number {
+    display: none;
+    @include for-both {
+        z-index: 500000;
+        background: white;
+        display: unset; 
+        color: $blue;
+        position: absolute;
+        right: 1%;
+        top: 20%;
+    }
+    &__two {
+        z-index: 500000;
+        background: white;
+        display: unset; 
+        color: $blue;
+        position: absolute;
+        right: 1%;
+        top: 40%;
+    }
+    &__three {
+        z-index: 500000;
+        background: white;
+        display: unset; 
+        color: $blue;
+        position: absolute;
+        right: 1%;
+        top: 70%;
+    }
+}
+
+.fraction-style {
+    font-size:50px;
+  }
+  .subfraction-style {
+    font-weight: 300;
+  }
