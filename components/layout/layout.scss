@@ -16,3 +16,39 @@
         font-size: 26px;
     }
 }
+
+.about-main-title {
+    font-size: 24px;
+    left: 35%;
+    top: 45%;
+    width: 600px;
+    font-weight: 300;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    @include for-phone {
+        top: 28%;
+        left: 40%;
+    }
+    @include for-tablet{
+        left: 35%;
+        top: 13%;
+    }
+}
+
+.about-sub-title {
+    font-size: 24px;
+    font-weight: 800;
+    left: 35%;
+    width: 600px;
+    top: 58%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    @include for-phone {
+        top: 52%;
+        left: 40%;
+    }
+    @include for-tablet{
+        left: 35%;
+        top: 28%;
+    }
+}

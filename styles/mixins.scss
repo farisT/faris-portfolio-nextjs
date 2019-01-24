@@ -60,7 +60,7 @@
 }
 
 @mixin for-tablet {
-    @media (min-width: 641px) and (max-width: 1023px) { @content; }
+    @media (min-width: 641px) and (max-width: 1024px) { @content; }
 }
 
 @mixin for-both {
@@ -70,3 +70,7 @@
 @mixin for-phablet {
   @media (max-width: 1023px) { @content; }
 }
+
+@mixin for-big-screen {
+    @media (min-width: 2000px) { @content; }
+  }

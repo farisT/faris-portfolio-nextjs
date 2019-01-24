@@ -55,7 +55,9 @@ export default class ProjectSlider extends React.Component {
                 {props.children &&
                 <div className='section section--home '>
                     {props.children}
-                    <button onClick={() => fullpageApi.moveSectionDown()}>Hello</button>
+                    <div onClick={() => fullpageApi.moveSectionDown()}>
+                      <a href="#" className="header__link">PROJECTS</a>
+                    </div>
                 </div>
                 }
                   <div className='section'>

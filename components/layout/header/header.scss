@@ -2,7 +2,7 @@
     width: 100%;
     position: relative;
     z-index: 100;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     max-height: 10px;
     &--fixed {
@@ -40,16 +40,22 @@
             text-decoration: none;
             color: $blue;
         }
+        @include for-phone {
+            margin-left: 1rem;
+        }
         &--bedrijvenportal{
             @include header-text;
             @include border-pink;
+            @include for-phone {
+                margin-left: 1rem;
+            }
             margin-left: 0rem;
         }
         &--swop{
             @include header-text;
             @include border-green;
             @include for-phone {
-                margin-left: 0rem;
+                margin-left: 1rem;
             }
             margin-left: 2rem;
         }
@@ -57,7 +63,7 @@
             @include header-text;
             @include border-lightblue;
             @include for-phone {
-                margin-left: 0rem;
+                margin-left: 1rem;
             }
             margin-left: 2rem;
 
@@ -74,6 +80,9 @@
             @include header-text;
             @include border-green;
             margin-left: 2rem;
+            @include for-phone {
+                margin-left: 1rem;
+            }
         }
         
     }

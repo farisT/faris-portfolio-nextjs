@@ -1,6 +1,6 @@
 .social-media {
     margin: 0 auto;
-    padding-top: 250px;
+    padding-top: 20rem;
         &__container {
             background: $blue;
             border-radius: 50%;
@@ -10,7 +10,13 @@
             margin-top: 20px;
             display: block;
         }
+    @include for-tablet {
+        padding-top: 8rem;
+    }
     @include for-phone {
         display: none;
+    }
+    @include for-big-screen {
+        padding-top: 32rem;
     }
 }
