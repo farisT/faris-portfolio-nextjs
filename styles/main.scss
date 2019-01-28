@@ -28,11 +28,26 @@ body {
 
 .project-grid {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto 50%;
+    grid-row-gap: 4rem;
     grid-template-rows: auto auto auto;
     @include for-phone {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
+    }
+}
+
+.project-skills-one {
+    top: 12rem;
+    left: 5rem;
+    position: absolute;
+    width:150px;
+    font-weight: 300;
+    &--title{
+        top: 10rem;
+        left: 5rem;
+        position: absolute;
+        width:150px;
     }
 }
 

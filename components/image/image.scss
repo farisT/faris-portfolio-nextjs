@@ -24,6 +24,21 @@
     }
 }
 
+.project-image {
+    width: 95%;
+    @include for-phone {
+        width: 100%;
+    }
+}
+.project-image-one {
+    width: 95%;
+    margin-left: 20rem;
+    @include for-phone {
+        width: 100%;
+        margin-left: 0rem;
+    }
+}
+
 .about-image-normal {
     width: 95%;
     content: url('../assets/about/groenfull.jpg');
@@ -42,6 +57,15 @@
     }
 }
 
+.bp-triangle-one {
+    position: absolute;
+    left: -1%;
+}
+
+.bp-triangle-two {
+    position: absolute;
+    right: -1%;
+}
 
 .triangle-about-pink {
     position: absolute;

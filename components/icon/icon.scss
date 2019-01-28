@@ -27,3 +27,18 @@
         background-repeat: no-repeat;
     }
 }
+
+.icon--link{
+    width: 58%;
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    &:hover {
+        content: url("../assets/icons/link-pink.svg");
+        background-repeat: no-repeat;
+    }
+    &:active {
+        content: url("../assets/icons/link-clicked.svg");
+        background-repeat: no-repeat;
+    }
+}

@@ -28,9 +28,12 @@
     @include for-phone {
         top: 28%;
         left: 40%;
+        width: 200px;
+        font-size: 18px;
     }
     @include for-tablet{
-        left: 35%;
+        width: 400px;
+        left: 45%;
         top: 13%;
     }
 }
@@ -44,11 +47,15 @@
     position: absolute;
     transform: translate(-50%,-50%);
     @include for-phone {
-        top: 52%;
+        top: 54%;
         left: 40%;
+        width: 200px;
+        font-size: 18px;
     }
     @include for-tablet{
-        left: 35%;
-        top: 28%;
+        width: 400px;
+        left: 45%;
+        top: 22%;
+        font-size: 18px;
     }
 }

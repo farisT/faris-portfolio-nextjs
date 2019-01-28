@@ -1,0 +1,22 @@
+.project-links {
+    position: absolute;
+    width: 200px;
+    top: 138px;
+    right: 0%;
+        &__container {
+            background: $blue;
+            border-radius: 50%;
+            width: 50px;
+            overflow: hidden;
+            height: 50px;
+            margin-right: 1rem;
+            display: inline-block;
+        }
+}
+
+.view-online {
+    text-align: center;
+    width: 125px;
+    line-height: 3.45;
+    font-size: 20px;
+}

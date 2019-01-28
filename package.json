@@ -22,6 +22,7 @@
     "react-dom": "^16.6.3",
     "react-pose": "^4.0.1",
     "react-sticky": "^6.0.3",
+    "react-transition-group": "^1.2.1",
     "react-visibility-sensor": "^5.0.2"
   },
   "devDependencies": {
