@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Main, SocialMedia, Container, Description } from '../components/layout';
 import { HeadImage } from '../components/image';
 import TriangleOne from '../assets/projecthree/bluetriangleone.svg';
@@ -19,7 +19,7 @@ export default function () {
                   MY SKILLS
                 </div>
                 <div className="project-skills-one">
-                  Node.js, MongoDB, React, JavaScript
+                  Node.js, Typescript
                 </div>
             </div>
             <Description title={data.bedrijvenportal.title} >

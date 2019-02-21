@@ -25,7 +25,7 @@
 }
 
 .project-image {
-    width: 95%;
+    width: 100%;
     @include for-phone {
         width: 100%;
     }
@@ -59,13 +59,20 @@
 
 .bp-triangle-one {
     position: absolute;
-    left: -1%;
+    left: 0%;
 }
 
 .bp-triangle-two {
     position: absolute;
-    right: -1%;
+    right: 0%;
 }
+
+.rs-triangle-two {
+    position: absolute;
+    right: 0%;
+    top:2rem;
+}
+
 
 .triangle-about-pink {
     position: absolute;

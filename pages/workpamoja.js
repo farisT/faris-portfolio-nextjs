@@ -10,24 +10,32 @@ export default function () {
       <Main>
           <Container>
             <SocialMedia />
-            <HeadImage image={BedrijvenPortalMain} />
+						<HeadImage
+						image={BedrijvenPortalMain}
+						/>
           </Container>
           <div className='project-grid'>
             <div style={{position:'relative'}}>
-                <Triangle className="bp-triangle-one" image={TriangleOne} />
+								<Triangle
+								className="bp-triangle-one"
+								image={TriangleOne}
+								/>
                 <div className="project-skills-one--title">
                   MY SKILLS
                 </div>
                 <div className="project-skills-one">
-                  Node.js, MongoDB, React, JavaScript
+                  React, Node.js, React, JavaScript
                 </div>
             </div>
-            <Description title={data.bedrijvenportal.title} >
+						<Description title={data.bedrijvenportal.title}>
               {data.bedrijvenportal.description}
             </Description>
             <StandardImage className='project-image-one' />
             <div style={{position:'relative'}}>
-              <Triangle className="bp-triangle-two" image={TriangleOne} />
+							<Triangle
+							className="bp-triangle-two"
+							image={TriangleOne}
+							/>
               <ProjectLinks
                 githubLink='#'
                 hostLink='#'

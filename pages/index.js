@@ -3,8 +3,8 @@ import { Main, SocialMedia } from '../components/layout'
 import { ProjectSlider } from '../components/sliders'
 import { HomeImage } from '../components/image'
 import Timeline from '../components/sliders/timeline';
-export default class extends Component {
-  render() {
+
+export default function () {
     return (
       <Main>
           <ProjectSlider children>
@@ -15,5 +15,4 @@ export default class extends Component {
           </ProjectSlider>
       </Main>
     )
-  }
-}
+};

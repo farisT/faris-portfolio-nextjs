@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Main, SocialMedia, Container, Description } from '../components/layout';
 import { HeadImage, StandardImage, Triangle } from '../components/image';
+import { SmallSlider } from '../components/sliders';
 import ProjectLinks from '../components/project-link/project-link'
 import BedrijvenPortalMain from '../assets/projectone/bedrijvenportal/bedrijven-portal-main.jpg'
 import BedrijvenPortalHome from '../assets/projectone/bedrijvenportal/bedrijven-portal-home.png'
@@ -42,7 +43,6 @@ export default class extends Component {
             <div/>
             <StandardImage image={BedrijvenPortalSearch} className='project-image' />
             <StandardImage image={BedrijvenPortalSeo} className='project-image' />
-
           </div>
       </Main>
     )

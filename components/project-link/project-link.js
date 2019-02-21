@@ -9,12 +9,18 @@ const ProjectLinks = props => {
             <div className="view-online">VIEW ONLINE</div>
             <div className="project-links__container">
                 <a href={props.hostLink}>
-                    <Icon iconType='--link' image={linkIcon} />
+										<Icon
+										iconType='--link'
+										image={linkIcon}
+										/>
                 </a>
             </div>
             <div className="project-links__container">
                 <a href={props.githubLink}>
-                    <Icon iconType='--github' image={gitHubIcon} />
+										<Icon
+										iconType='--github'
+										image={gitHubIcon}
+										/>
                 </a>
             </div>
         </div>

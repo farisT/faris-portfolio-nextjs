@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Navlink from '../components/navlink/link'
 import { Main, SocialMedia, Container, Description } from '../components/layout';
 import { StandardImage, Triangle } from '../components/image';
 import { data } from '../data/descriptions.js';
 import TriangleOne from '../assets/about/triangleone.svg';
 import TriangleTwo from '../assets/about/triangletwo.svg';
-export default class extends Component {
-  render() {
+
+export default function () {
     return (
       <Main>
         <Container>
@@ -45,5 +45,4 @@ export default class extends Component {
         </div>
       </Main>
     )
-  }
-}
+};
