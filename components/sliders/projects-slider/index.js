@@ -1,4 +1,5 @@
 import React from 'react';
+import { Projects } from '../../../data/projects';
 import Timeline from '../timeline';
 import NavLink from '../../navlink/link'
 import ReactFullpage from '@fullpage/react-fullpage';
@@ -6,7 +7,7 @@ import BedrijvenportalOne from '../../../assets/projectone/bedrijvenportal/bedri
 import BedrijvenportalTwo from '../../../assets/projectone/bedrijvenportal/bedrijven-portal-triangle2.png'
 import SwopOne from '../../../assets/projecttwo/Swop/swop-triangle-one.png'
 import SwopTwo from '../../../assets/projecttwo/Swop/swop-triangle-two.png'
-// import Timeline from '../../../assets/slider/Line.svg'
+import { Section } from './section';
 
 const opts = {
   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
@@ -34,19 +35,19 @@ export default class ProjectSlider extends React.Component {
     }
     else {
       this.setState({
-        slideNumber:destination.index 
+        slideNumber:destination.index
       })
     }
   }
 
   render(){
     const props = this.props;
-    const {slideNumber} = this.state
+		const { slideNumber } = this.state
     return(
       <div className='slider'>
       {props.children && slideNumber === 0 ?  null : <Timeline className={'project-number' + '__' + slideNumber}  number={this.state.slideNumber} />}
         <ReactFullpage
-        anchors={['firstPage', 'secondPage', 'thirdPage', 'forthPage']}
+        anchors={['firstPage', 'secondPage', 'thirdPage', 'forthPage', 'fifthpage']}
         onLeave={this.onLeave}
         {...opts}
           render={({ state, fullpageApi }) => {
@@ -59,62 +60,46 @@ export default class ProjectSlider extends React.Component {
                       <a href="#" className="header__link">PROJECTS</a>
                     </div>
                 </div>
-                }
-                  <div className='section'>
-                    <div style={{backgroundColor:"white"}}>
-                      <div className="project--one">
-                        <span className='project__number'>1</span>
-                        <div className='project__title'>Bedrijvenportal</div>
-                        <NavLink
-                          href='/bedrijvenportal'
-                          className='project__link--blue'
-                          text='VIEW PROJECT'
-                        />
-                        <img className='project__triangle-top' src={BedrijvenportalOne} />
-                        <img className='project__triangle-bottom' src={BedrijvenportalTwo} />
-                        <div className='project__info'>
-                          <div className='project__info-title'>Used Skills</div>
-                          <div className='project__info-details'>React, JavaScript, Express, Node.js, MongoDB, Docker, Firebase, SSR, REST API</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='section'>
-                    <div style={{backgroundColor:"white"}}>
-                      <div className="project--two">
-                        <span className='project__number'>2</span>
-                          <div className='project__title'>Swop</div>
-                          <NavLink
-                            href='/swop'
-                            className='project__link--blue'
-                            text='VIEW PROJECT'
-                          />
-                          <img className='project__triangle-top' src={SwopOne} />
-                          <img className='project__triangle-bottom' src={SwopTwo} />
-                          <div className='project__info'>
-                            <div className='project__info-title'>Used Skills</div>
-                            <div className='project__info-details'>React, JavaScript, Express, Node.js, MongoDB, Docker, Firebase, SSR, REST API</div>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='section '>
-                    <div style={{backgroundColor:"white"}}>
-                      <div className='project--three'>
-                        <span className='project__number'>3</span>
-                        <div className='project__title'>ReactStack</div>
-                        <NavLink
-                          href='/reactstack'
-                          className='project__link--blue'
-                          text='VIEW PROJECT'
-                        />
-                        <div className='project__info'>
-                          <div className='project__info-title'>Used Skills</div>
-                          <div className='project__info-details'>React, JavaScript, Express, Node.js, MongoDB, Docker, Firebase, SSR, REST API</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+								}
+									<Section
+									project='project--one'
+									projectTitle={Projects.bedrijvenportal.title}
+									projectNumber={Projects.bedrijvenportal.projectNumber}
+									triangleOne={BedrijvenportalOne}
+									triangleTwo={BedrijvenportalTwo}
+									usedSkills={Projects.bedrijvenportal.usedSkills}
+									href='/bedrijvenportal'
+									/>
+									<Section
+									project='project--two'
+									projectTitle={Projects.swop.title}
+									projectNumber={Projects.swop.projectNumber}
+									triangleOne={SwopOne}
+									triangleTwo={SwopTwo}
+									usedSkills={Projects.swop.usedSkills}
+									href='/swop'
+									/>
+									<Section
+									project='project--three'
+									projectTitle={Projects.reactstack.title}
+									projectNumber={Projects.reactstack.projectNumber}
+									usedSkills={Projects.reactstack.usedSkills}
+									href='/reactstack'
+									/>
+									{/* <Section
+									project='project--one'
+									projectTitle={Projects.smoelenboek.title}
+									projectNumber={Projects.smoelenboek.projectNumber}
+									usedSkills={Projects.smoelenboek.usedSkills}
+									href='/smoelenboek'
+									/>
+									<Section
+									project='project--two'
+									projectTitle={Projects.liftr.title}
+									projectNumber={Projects.liftr.projectNumber}
+									usedSkills={Projects.liftr.usedSkills}
+									href='/liftr'
+									/> */}
               </ReactFullpage.Wrapper>
             );
           }}
