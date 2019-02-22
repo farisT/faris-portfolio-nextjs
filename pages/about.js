@@ -30,14 +30,14 @@ export default function () {
           </div>
           <div style={{position:"relative", marginLeft:"-7px"}} >
             <Triangle className="triangle-about-blue" image={TriangleOne} />
-            <div className="about-skills">
+            {/* <div className="about-skills">
               <div>
                   Used Skills
               </div>
               <div style={{fontWeight:"300"}}>
                 HTML, CSS, SASS, JavaScript,  React, Node.js, Express, Bootstrap, Firebase, REST API, Firebase, Cloud Functions, PostgreSQL, MongoDB
               </div>
-            </div>
+            </div> */}
           </div>
           <div style={{position:"relative"}} >
             <Triangle className="triangle-about-pink" image={TriangleTwo} />

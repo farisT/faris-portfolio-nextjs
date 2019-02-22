@@ -199,3 +199,25 @@
   .subfraction-style {
     font-weight: 300;
   }
+
+.home-title {
+	@include for-phone {
+		width: 100px;
+		height: 100px;
+		font-size: 50px;
+	}
+	width: 506px;
+	height: 290px;
+	font-weight: 800;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+  font-family: Poppins;
+  font-size: 165px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.35;
+  letter-spacing: normal;
+	text-align: justify;
+
+}

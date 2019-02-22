@@ -30,7 +30,7 @@ body {
 .project-grid {
     display: grid;
     grid-template-columns: auto 50%;
-    grid-row-gap: 4rem;
+    grid-row-gap: 1rem;
     grid-template-rows: auto auto auto;
     @include for-phone {
     grid-template-columns: auto;

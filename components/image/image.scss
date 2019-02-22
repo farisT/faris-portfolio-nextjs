@@ -8,10 +8,13 @@
 
 .face-outline {
     position: absolute;
-    left: 10%;
+		left: 10%;
+		top: 12%;
+		width: 40%;
     @include for-phone {
         left: 0%;
-        width:  90%;
+				width:  80%;
+				top: unset;
     }
 }
 
@@ -58,11 +61,20 @@
 }
 
 .bp-triangle-one {
+	@include for-phone {
+		position:unset;
+		width: 80%;
+	}
     position: absolute;
     left: 0%;
 }
 
 .bp-triangle-two {
+	@include for-phone {
+		width: 80%;
+    margin-left: 20%;
+    position: unset;
+	}
     position: absolute;
     right: 0%;
 }

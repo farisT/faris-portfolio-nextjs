@@ -55,7 +55,8 @@ export default class ProjectSlider extends React.Component {
               <ReactFullpage.Wrapper>
                 {props.children &&
                 <div className='section section--home '>
-                    {props.children}
+										{props.children}
+										<div className="home-title">Faris.</div>
                     <div onClick={() => fullpageApi.moveSectionDown()}>
                       <a href="#" className="header__link">PROJECTS</a>
                     </div>
