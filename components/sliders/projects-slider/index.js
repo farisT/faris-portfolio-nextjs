@@ -87,7 +87,7 @@ export default class ProjectSlider extends React.Component {
 									usedSkills={Projects.reactstack.usedSkills}
 									href='/reactstack'
 									/>
-									{/* <Section
+									<Section
 									project='project--one'
 									projectTitle={Projects.smoelenboek.title}
 									projectNumber={Projects.smoelenboek.projectNumber}
@@ -100,7 +100,7 @@ export default class ProjectSlider extends React.Component {
 									projectNumber={Projects.liftr.projectNumber}
 									usedSkills={Projects.liftr.usedSkills}
 									href='/liftr'
-									/> */}
+									/>
               </ReactFullpage.Wrapper>
             );
           }}
