@@ -28,14 +28,9 @@
         display: inline-block;
     }
     &__link {
-        
-        text-decoration: none;
-        color: $blue;
-        font-weight: 800;
-        font-size: 20px;
-        @include header-text;
-        @include border-pink;
-        margin-left: 2rem;
+			@include border-pink;
+			@include header-text;
+			margin-left: 2rem;
         &:visited{
             text-decoration: none;
             color: $blue;
@@ -44,16 +39,16 @@
             margin-left: 1rem;
         }
         &--bedrijvenportal{
-            @include header-text;
-            @include border-pink;
+						@include border-pink;
+						@include header-text;
             @include for-phone {
                 margin-left: 1rem;
             }
-            margin-left: 0rem;
+            margin-left: 2rem;
         }
         &--swop{
+						@include border-green;
             @include header-text;
-            @include border-green;
             @include for-phone {
                 margin-left: 1rem;
             }
@@ -69,21 +64,21 @@
 
         }
         &--projects{
-            @include header-text;
-            @include border-green;
+						@include border-green;
+						@include header-text;
             margin-left: 2rem;
             @include for-phone {
                 margin-left: 1rem;
             }
         }
         &--about{
+						@include border-green;
             @include header-text;
-            @include border-green;
             margin-left: 2rem;
             @include for-phone {
                 margin-left: 1rem;
             }
         }
-        
+
     }
 }

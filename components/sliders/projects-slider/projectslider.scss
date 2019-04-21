@@ -94,7 +94,6 @@
     &__link {
         @include border-lightblue;
         @include link-text;
-        line-height: 1.0em;
         position: absolute;
         top: 60%;
         left: 50%;
@@ -220,4 +219,8 @@
   letter-spacing: normal;
 	text-align: justify;
 
+}
+
+.arrow {
+	margin-left: 4rem;
 }

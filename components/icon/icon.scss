@@ -42,3 +42,18 @@
         background-repeat: no-repeat;
     }
 }
+
+.icon--medium{
+	width: 58%;
+	margin: 0 auto;
+	display: block;
+	height: 100%;
+	&:hover {
+			content: url("../assets/icons/medium-pink.svg");
+			background-repeat: no-repeat;
+	}
+	&:active {
+			content: url("../assets/icons/medium-clicked.svg");
+			background-repeat: no-repeat;
+	}
+}

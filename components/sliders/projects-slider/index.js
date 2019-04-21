@@ -1,7 +1,7 @@
 import React from 'react';
 import { Projects } from '../../../data/projects';
 import Timeline from '../timeline';
-import NavLink from '../../navlink/link'
+import arrowIcon from '../../../assets/etc/arrow.svg';
 import ReactFullpage from '@fullpage/react-fullpage';
 import BedrijvenportalOne from '../../../assets/projectone/bedrijvenportal/bedrijven-portal-triangle1.png'
 import BedrijvenportalTwo from '../../../assets/projectone/bedrijvenportal/bedrijven-portal-triangle2.png'
@@ -59,6 +59,9 @@ export default class ProjectSlider extends React.Component {
 										<div className="home-title">Faris.</div>
                     <div onClick={() => fullpageApi.moveSectionDown()}>
                       <a href="#" className="header__link">PROJECTS</a>
+											<div>
+												<img className="arrow" src={arrowIcon} />
+											</div>
                     </div>
                 </div>
 								}
