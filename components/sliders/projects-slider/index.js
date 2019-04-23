@@ -54,10 +54,14 @@ export default class ProjectSlider extends React.Component {
             return (
               <ReactFullpage.Wrapper>
                 {props.children &&
-                <div className='section section--home '>
+                <div className='section section--home'>
 										{props.children}
 										<div className="home-title">Faris.</div>
-                    <div onClick={() => fullpageApi.moveSectionDown()}>
+										<div className="home-subtitle">I am a motivated Dutch FULLSTACK DEVELOPER</div>
+										<div className="home-link-subtitle">
+											<a className="more-about-me" href="/about">MORE ABOUT ME</a>
+										</div>
+                    <div className="projects-homepage-link" onClick={() => fullpageApi.moveSectionDown()}>
                       <a href="#" className="header__link">PROJECTS</a>
 											<div>
 												<img className="arrow" src={arrowIcon} />
@@ -102,7 +106,7 @@ export default class ProjectSlider extends React.Component {
 									projectTitle={Projects.liftr.title}
 									projectNumber={Projects.liftr.projectNumber}
 									usedSkills={Projects.liftr.usedSkills}
-									href='/liftr'
+									href='https://github.com/farisT/liftr'
 									/>
               </ReactFullpage.Wrapper>
             );

@@ -33,8 +33,8 @@ export default function () {
             <div style={{position:'relative'}}>
               <Triangle className="bp-triangle-two" image={TriangleTwo} />
               <ProjectLinks
-                githubLink='#'
-                hostLink='#'
+                githubLink='https://github.com/farisT/Swopproject'
+                hostLink='https://swopaholic.herokuapp.com/'
               />
             </div>
             <div/>

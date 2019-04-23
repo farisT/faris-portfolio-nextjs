@@ -13,7 +13,7 @@ export default function () {
           <SocialMedia />
           <div>
             <div className="about-main-title">Nice to meet you!</div>
-            <div className="about-sub-title">As a Full-stack Developer I work mainly with Node.js, React.js, Redux, and JavaScript (ES6). I ensure the delivery of a maintainable and scalable application with consistent code".</div>
+            <div className="about-sub-title">As a Full-stack Developer I work mainly with Node.js, React.js, Redux, JavaScript and TypeScript. I ensure the delivery of a maintainable and scalable application with consistent code".</div>
             <StandardImage className='about-image-normal' />
           </div>
           <StandardImage className='about-image-small'/>
