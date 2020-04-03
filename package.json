@@ -10,10 +10,7 @@
     "start": "next start",
     "deploy": "npm run build && npm run export",
     "lint": "eslint pages/*.js components/*.js"
-	},
-	"engines": {
-		"node" : "~12.13.1"
-	},
+  },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.10",
     "@zeit/next-sass": "^1.0.1",
