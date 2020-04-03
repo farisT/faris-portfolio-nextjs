@@ -63,7 +63,7 @@ export default class ProjectSlider extends React.Component {
 										</div>
                     <div className="projects-homepage-link" onClick={() => fullpageApi.moveSectionDown()}>
                       <a href="#" className="header__link">PROJECTS</a>
-											<div>
+												<div>
 												<img className="arrow" src={arrowIcon} />
 											</div>
                     </div>
@@ -95,18 +95,11 @@ export default class ProjectSlider extends React.Component {
 									href='/reactstack'
 									/>
 									<Section
-									project='project--one'
-									projectTitle={Projects.smoelenboek.title}
-									projectNumber={Projects.smoelenboek.projectNumber}
-									usedSkills={Projects.smoelenboek.usedSkills}
-									href='/smoelenboek'
-									/>
-									<Section
 									project='project--two'
 									projectTitle={Projects.liftr.title}
 									projectNumber={Projects.liftr.projectNumber}
 									usedSkills={Projects.liftr.usedSkills}
-									href='https://github.com/farisT/liftr'
+									href='https://github.com/liftr-framework/cli'
 									/>
               </ReactFullpage.Wrapper>
             );

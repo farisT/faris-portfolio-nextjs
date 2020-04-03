@@ -9,7 +9,7 @@ const Timeline = props => {
             <span className={props.className || "project-number"}>
                 <sup className="fraction-style">{props.number}</sup >
                 <span className="subfraction-style" >&frasl;</span>
-                <sub className="subfraction-style">5</sub>
+                <sub className="subfraction-style">4</sub>
             </span>
         </>
     )

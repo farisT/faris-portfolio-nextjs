@@ -32,8 +32,7 @@ export default class extends Component {
             <div style={{position:'relative'}}>
               <Triangle className="rs-triangle-two" image={TriangleTwo} />
               <ProjectLinks
-                githubLink='#'
-                hostLink='#'
+                githubLink='https://github.com/farisT/ReactStack'
               />
             </div>
             <div/>

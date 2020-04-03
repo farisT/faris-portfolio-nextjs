@@ -35,10 +35,6 @@ export default class extends Component {
             <StandardImage image={BedrijvenPortalHome} className='project-image-one' />
             <div style={{position:'relative'}}>
               <Triangle className="bp-triangle-two" image={TriangleTwo} />
-              <ProjectLinks
-                githubLink='#'
-                hostLink='#'
-              />
             </div>
             <div/>
             <StandardImage image={BedrijvenPortalSearch} className='project-image' />

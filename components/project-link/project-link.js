@@ -7,6 +7,7 @@ const ProjectLinks = props => {
     return(
         <div className="project-links">
             <div className="view-online">VIEW ONLINE</div>
+				{props.hostLink &&
             <div className="project-links__container">
                 <a href={props.hostLink}>
 										<Icon
@@ -14,15 +15,15 @@ const ProjectLinks = props => {
 										image={linkIcon}
 										/>
                 </a>
-            </div>
-            <div className="project-links__container">
+            </div>}
+            {props.githubLink && <div className="project-links__container">
                 <a href={props.githubLink}>
 										<Icon
 										iconType='--github'
 										image={gitHubIcon}
 										/>
                 </a>
-            </div>
+            </div>}
         </div>
     )
 }
